@@ -1,13 +1,17 @@
 import { createBrowserRouter } from 'react-router-dom';
-import App from './App';
+import Home from './Home';
+import ChatRoom from './pages/ChatRoom';
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
-
+        element: <Home />,
     },
+    {
+        path: "/chat",
+        element: <ChatRoom />,
+    }
 ]);
 
 export default router;
